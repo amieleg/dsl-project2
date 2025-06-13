@@ -12,6 +12,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Colour">
     <eLiterals name="White"/>
+    <eLiterals name="White" value="1"/>
+    <eLiterals name="Yellow" value="2"/>
+    <eLiterals name="Green" value="3"/>
+    <eLiterals name="Blue" value="4"/>
+    <eLiterals name="Red" value="5"/>
+    <eLiterals name="Purple" value="6"/>
+    <eLiterals name="Pink" value="7"/>
+    <eLiterals name="Black" value="8"/>
+    <eLiterals name="Orange" value="9"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Hold">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -30,7 +39,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="vertices" lowerBound="3"
         upperBound="3" eType="#//Coordinate3D"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holds" upperBound="-1"
-        eType="#//Hold"/>
+        eType="#//Hold" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Polygon" eSuperTypes="#//Volume">
     <eStructuralFeatures xsi:type="ecore:EReference" name="faces" lowerBound="1" upperBound="-1"
@@ -46,7 +55,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="position" lowerBound="1"
         eType="#//Coordinate2D"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holds" upperBound="-1"
-        eType="#//Hold"/>
+        eType="#//Hold" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Circle" eSuperTypes="#//Volume">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="radius" lowerBound="1"
@@ -55,7 +64,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="position" lowerBound="1"
         eType="#//Coordinate2D"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holds" upperBound="-1"
-        eType="#//Hold"/>
+        eType="#//Hold" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Volume" abstract="true" interface="true"/>
   <eClassifiers xsi:type="ecore:EClass" name="Route">
@@ -69,8 +78,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="BoulderingWall">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="routes" lowerBound="1"
-        upperBound="-1" eType="#//Route"/>
+        upperBound="-1" eType="#//Route" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="volumes" lowerBound="1"
-        upperBound="-1" eType="#//Volume"/>
+        upperBound="-1" eType="#//Volume" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>
