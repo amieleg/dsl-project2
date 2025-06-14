@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bouldering:BoulderingWall
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bouldering="http://www.example.org/bouldering"
+    xsi:schemaLocation="http://www.example.org/bouldering ../model/bouldering.ecore"
+    id="Muur">
+  <volumes xsi:type="bouldering:Rectangle"
+  	depth="10"
+  	width="10"
+  	height="10">
+  	<position xsi:type="bouldering:Coordinate2D"
+  		x="5"
+  		y="5"/>
+    <holds id="Hold1" shape="1" start_hold="1" end_hold="false" rotation="255">
+    </holds>
+    	
+  </volumes>
+</bouldering:BoulderingWall>
