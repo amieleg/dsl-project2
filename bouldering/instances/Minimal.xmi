@@ -5,7 +5,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:bouldering="http://www.example.org/bouldering"
     xsi:schemaLocation="http://www.example.org/bouldering ../model/bouldering.ecore"
-    id="Muur">
+    id="SmallWall">
+  
+  <routes id="R1" grade="6A+" holds="#0001 #0002">
+    <grid_base_point
+        x="0"
+        y="0"/>
+  </routes>
+  
   <volumes xsi:type="bouldering:Rectangle"
       depth="10"
       width="10"
@@ -13,15 +20,34 @@
     <position
         x="5"
         y="5"/>
-    <holds id="Hold1"
-        shape="1"
+    <holds id="0001"
+        shape="52"
         start_hold="1"
         rotation="255">
+      <end_hold>false</end_hold>
       <position
           x="5"
           y="6"/>
       <colours>Blue</colours>
       <colours>Pink</colours>
     </holds>
+    <holds id="0002"
+        shape="53"
+        end_hold="true"
+        rotation="90">
+      <position
+          x="10"
+          y="15"/>
+      <colours>Blue</colours>
+    </holds>
   </volumes>
+  
+  <volumes xsi:type="bouldering:Circle"
+      radius="20"
+      depth="5">
+    <position
+        x="50"
+        y="50"/>
+  </volumes>
+  
 </bouldering:BoulderingWall>

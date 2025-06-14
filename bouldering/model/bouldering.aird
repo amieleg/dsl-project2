@@ -3,6 +3,7 @@
   <viewpoint:DAnalysis uid="_K6hWkEiIEfCyCbvZT_pmZQ" selectedViews="_OR9zgEiIEfCyCbvZT_pmZQ _xLtHoEiKEfCyCbvZT_pmZQ _xMEUAEiKEfCyCbvZT_pmZQ _xMejsEiKEfCyCbvZT_pmZQ" version="15.4.1.202403191723">
     <semanticResources>bouldering.ecore</semanticResources>
     <semanticResources>bouldering.genmodel</semanticResources>
+    <semanticResources>../instances/Minimal.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_OR9zgEiIEfCyCbvZT_pmZQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_OV9isEiIEfCyCbvZT_pmZQ" name="bouldering" repPath="#_OUVLAEiIEfCyCbvZT_pmZQ" changeId="1749842129299">

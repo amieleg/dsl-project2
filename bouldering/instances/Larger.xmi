@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bouldering:BoulderingWall
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:bouldering="http://www.example.org/bouldering"
+    xsi:schemaLocation="http://www.example.org/bouldering ../model/bouldering.ecore"
+    id="BigWall">
+  
+  <routes
+      id="BlueSlabDream"
+      grade="6B"
+      holds="#0001 #0003 #0005 #0007 #0009 #0011">
+    <grid_base_point x="0" y="0"/>
+  </routes>
+  
+  <routes
+      id="RedOverhangPower"
+      grade="7A"
+      holds="#0012 #0013 #0014 #0015 #0016 #0017">
+    <grid_base_point x="100" y="0"/>
+  </routes>
+  
+  <volumes
+      xsi:type="bouldering:Rectangle"
+      depth="10"
+      width="400"
+      height="500">
+    <position x="0" y="0"/>
+    <holds id="0001" shape="52" start_hold="1" end_hold="false" rotation="45">
+      <position x="50" y="50"/><colours>Blue</colours>
+    </holds>
+    <holds id="0002" shape="51" start_hold="0" end_hold="false" rotation="0">
+      <position x="80" y="120"/><colours>Blue</colours>
+    </holds>
+    <holds id="0003" shape="59" start_hold="0" end_hold="false" rotation="90">
+      <position x="60" y="200"/><colours>Blue</colours>
+    </holds>
+    <holds id="0004" shape="58" start_hold="0" end_hold="false" rotation="0">
+      <position x="150" y="250"/><colours>Green</colours>
+    </holds>
+    <holds id="0005" shape="57" start_hold="0" end_hold="false" rotation="0">
+      <position x="100" y="320"/><colours>Blue</colours>
+    </holds>
+    <holds id="0006" shape="56" start_hold="0" end_hold="false" rotation="180">
+      <position x="250" y="100"/><colours>Yellow</colours>
+    </holds>
+  </volumes>
+  
+  <volumes
+      xsi:type="bouldering:Circle"
+      radius="80"
+      depth="30">
+    <position x="250" y="250"/>
+    <holds id="0007" shape="55" start_hold="0" end_hold="false" rotation="315">
+      <position x="280" y="300"/><colours>Blue</colours>
+    </holds>
+    <holds id="0008" shape="54" start_hold="0" end_hold="false" rotation="0">
+      <position x="330" y="330"/><colours>Red</colours>
+    </holds>
+    <holds id="0009" shape="53" start_hold="0" end_hold="false" rotation="270">
+      <position x="250" y="380"/><colours>Blue</colours>
+    </holds>
+    <holds id="0010" shape="52" start_hold="0" end_hold="false" rotation="0">
+      <position x="200" y="330"/><colours>Yellow</colours>
+    </holds>
+    <holds id="0011" shape="51" start_hold="0" end_hold="true" rotation="0">
+      <position x="280" y="450"/><colours>Blue</colours>
+    </holds>
+  </volumes>
+  
+  <volumes
+      xsi:type="bouldering:Rectangle"
+      depth="150"
+      width="200"
+      height="300">
+    <position x="450" y="0"/>
+    <holds id="0012" shape="41" start_hold="1" end_hold="false" rotation="180">
+      <position x="460" y="30"/><colours>Red</colours>
+    </holds>
+    <holds id="0013" shape="42" start_hold="1" end_hold="false" rotation="270">
+      <position x="480" y="45"/><colours>Red</colours>
+    </holds>
+    <holds id="0014" shape="41" start_hold="0" end_hold="false" rotation="225">
+      <position x="520" y="100"/><colours>Red</colours>
+    </holds>
+    <holds id="0015" shape="43" start_hold="0" end_hold="false" rotation="0">
+      <position x="580" y="150"/><colours>Red</colours>
+    </holds>
+    <holds id="0016" shape="44" start_hold="0" end_hold="false" rotation="0">
+      <position x="600" y="220"/><colours>Red</colours>
+    </holds>
+    <holds id="0017" shape="44" start_hold="0" end_hold="true" rotation="0">
+      <position x="550" y="280"/><colours>Red</colours>
+    </holds>
+  </volumes>
+  
+</bouldering:BoulderingWall>
