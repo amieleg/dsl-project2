@@ -3,6 +3,8 @@
   <viewpoint:DAnalysis uid="_gogQEEaSEfCVtJDhK3iy0Q" selectedViews="_gpqtsEaSEfCVtJDhK3iy0Q" version="15.2.0.202303281325">
     <semanticResources>labour.ecore</semanticResources>
     <semanticResources>labour.genmodel</semanticResources>
+    <semanticResources>BoulderingWall.xmi</semanticResources>
+    <semanticResources>Coordinate2D.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_gpqtsEaSEfCVtJDhK3iy0Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gqOuYEaSEfCVtJDhK3iy0Q" name="labour" repPath="#_gqGykEaSEfCVtJDhK3iy0Q" changeId="1749627295973">

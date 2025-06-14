@@ -1,0 +1,16 @@
+modeltype Labour uses 'http://www.example.org/labour';
+modeltype Turtle uses 'http://www.example.org/turtle';
+
+transformation NewTransformation(in labour: Labour, out Turtle);
+
+main() {
+	labour.rootObjects()[Labour::Coordinate2D]->map coordinate2d2realConst();
+}
+
+mapping Labour::BoulderingWall::boulderingWall2program() : Turtle::Program {
+	
+}
+
+mapping Labour::Coordinate2D::coordinate2d2realConst() : Turtle::RealConst {
+	value := self.x
+}
