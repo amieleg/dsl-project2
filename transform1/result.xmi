@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bouldering="http://www.example.org/bouldering" xmlns:turtle="http://www.example.org/turtle" xsi:schemaLocation="http://www.example.org/bouldering ../bouldering/model/bouldering.ecore http://www.example.org/turtle ../nl.tue.dsldesign.turtle/model/turtle.ecore">
+  <bouldering:Coordinate2D/>
+  <turtle:Program>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="50.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="50.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="150.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="10.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="120.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="40.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="20.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="180.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="80.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnLeft">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="30.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="70.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="30.0"/>
+    </statements>
+  </turtle:Program>
+  <turtle:Program/>
+  <turtle:Program/>
+  <turtle:Program/>
+  <turtle:Program/>
+  <turtle:RealConst value="-20.0"/>
+  <turtle:Program/>
+  <turtle:RealConst value="-30.0"/>
+  <turtle:Program/>
+  <turtle:Program>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="420.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="180.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="15.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="20.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="55.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="40.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="50.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="60.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="70.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnRight">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="20.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnToZero"/>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="60.0"/>
+    </statements>
+    <statements xsi:type="turtle:TurnLeft">
+      <expr xsi:type="turtle:RealConst" value="90.0"/>
+    </statements>
+    <statements xsi:type="turtle:Move">
+      <expr xsi:type="turtle:RealConst" value="50.0"/>
+    </statements>
+  </turtle:Program>
+  <turtle:Program/>
+  <turtle:RealConst value="-420.0"/>
+  <turtle:Program/>
+  <turtle:Program/>
+  <turtle:Program/>
+  <turtle:Program/>
+  <turtle:Program/>
+  <turtle:RealConst value="-50.0"/>
+</xmi:XMI>

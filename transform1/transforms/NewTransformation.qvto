@@ -1,0 +1,54 @@
+modeltype Labour uses 'http://www.example.org/bouldering';
+modeltype Turtle uses 'http://www.example.org/turtle';
+
+transformation NewTransformation(in labour: Labour, out Turtle);
+
+main() {
+	labour.rootObjects()[Labour::BoulderingWall]-> map wall2program();
+}
+
+mapping Labour::BoulderingWall::wall2program() : OrderedSet(Turtle::Program) {
+	self.routes -> map route2program();
+}
+
+mapping Labour::Route::route2program(): Turtle::Program {
+	var end_hold := self.holds -> reverse() -> any(is_end());
+	var at := self.holds -> indexOf(end_hold);
+	var actual_holds := self.holds -> subOrderedSet(1, at);
+	statements := actual_holds -> map hold2program().statements -> flatten();
+}
+
+helper Labour::Hold::is_end(): Boolean {
+	return self.end_hold;
+}
+
+property base = object Labour::Coordinate2D{x := 0; y:= 0};
+
+
+mapping Labour::Hold::hold2program() : Turtle::Program {
+	statements := object Turtle::TurnToZero{};	
+	statements += object Turtle::Move{expr := object Turtle::RealConst{value := self.position.y - base.y}.absolute()};
+	if (self.position.x < base.x)
+	{
+		statements += object Turtle::TurnLeft{expr := object Turtle::RealConst{value := 90}};
+	}
+	else
+	{
+		statements += object Turtle::TurnRight{expr := object Turtle::RealConst{value := 90}};
+	};
+	
+	statements += object Turtle::Move{expr := object Turtle::RealConst{value := self.position.x - base.x}.absolute()};
+	
+	base := self.position;
+}
+
+helper Turtle::RealConst::absolute() : Turtle::RealConst {
+	if (self.value < 0)
+	{
+		return object Turtle::RealConst{value := -self.value};
+	}
+	else
+	{
+		return self
+	};
+}

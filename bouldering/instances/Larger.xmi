@@ -10,7 +10,7 @@
   <routes
       id="BlueSlabDream"
       grade="6B"
-      holds="#0001 #0003 #0005 #0007 #0009 #0011">
+      holds="#0001 #0003 #0005 #0007 #0009 #0011 #0018">
     <grid_base_point x="0" y="0"/>
   </routes>
   
@@ -92,6 +92,9 @@
     </holds>
     <holds id="0017" shape="44" start_hold="0" end_hold="true" rotation="0">
       <position x="550" y="280"/><colours>Red</colours>
+    </holds>
+        <holds id="0018" shape="44" start_hold="0" end_hold="false" rotation="0">
+      <position x="550" y="700"/><colours>Red</colours>
     </holds>
   </volumes>
   
