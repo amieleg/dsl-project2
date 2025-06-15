@@ -15,7 +15,7 @@ mapping Labour::Route::route2program(): Turtle::Program {
 	var end_hold := self.holds -> reverse() -> any(is_end());
 	var at := self.holds -> indexOf(end_hold);
 	var actual_holds := self.holds -> subOrderedSet(1, at);
-	statements := actual_holds -> map hold2program().statements -> flatten();
+	statements := actual_holds -> map hold2program() -> flatten();
 }
 
 helper Labour::Hold::is_end(): Boolean {
@@ -25,8 +25,10 @@ helper Labour::Hold::is_end(): Boolean {
 property base = object Labour::Coordinate2D{x := 0; y:= 0};
 
 
-mapping Labour::Hold::hold2program() : Turtle::Program {
-	statements := object Turtle::TurnToZero{};	
+helper Labour::Hold::hold2program() : OrderedSet(Turtle::Statement) {
+	var statements : OrderedSet(Turtle::Statement) := OrderedSet{};
+	
+	statements += object Turtle::TurnToZero{};
 	statements += object Turtle::Move{expr := object Turtle::RealConst{value := self.position.y - base.y}.absolute()};
 	if (self.position.x < base.x)
 	{
@@ -40,6 +42,8 @@ mapping Labour::Hold::hold2program() : Turtle::Program {
 	statements += object Turtle::Move{expr := object Turtle::RealConst{value := self.position.x - base.x}.absolute()};
 	
 	base := self.position;
+	
+	return statements;
 }
 
 helper Turtle::RealConst::absolute() : Turtle::RealConst {

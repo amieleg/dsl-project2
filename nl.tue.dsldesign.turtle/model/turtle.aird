@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_sAC8wB2MEe-zhvnhcHoGkg" selectedViews="_slOGYB2MEe-zhvnhcHoGkg" version="15.0.0.202201261500">
+  <viewpoint:DAnalysis uid="_sAC8wB2MEe-zhvnhcHoGkg" selectedViews="_slOGYB2MEe-zhvnhcHoGkg" version="15.4.1.202403191723">
     <semanticResources>turtle.ecore</semanticResources>
     <semanticResources>turtle.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_slOGYB2MEe-zhvnhcHoGkg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_soO-IB2MEe-zhvnhcHoGkg" name="turtle" repPath="#_snTxEB2MEe-zhvnhcHoGkg" changeId="11255f75-c7a0-4846-9690-cc7c320248f4">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_soO-IB2MEe-zhvnhcHoGkg" name="turtle" repPath="#_snTxEB2MEe-zhvnhcHoGkg" changeId="1749990559706">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="turtle.ecore#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_l5KzMB2OEe-zhvnhcHoGkg" name="expr" repPath="#_l5JlEB2OEe-zhvnhcHoGkg" changeId="d7c47c76-7ed0-4e5f-a2c7-ea484a4c5508">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_l5KzMB2OEe-zhvnhcHoGkg" name="expr" repPath="#_l5JlEB2OEe-zhvnhcHoGkg" changeId="1749990559706">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="turtle.ecore#/"/>
       </ownedRepresentationDescriptors>
